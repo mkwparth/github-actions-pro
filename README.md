@@ -71,3 +71,8 @@ export default defineConfig([
   },
 ])
 ```
+
+
+
+
+Added this line to capture the changes of event
