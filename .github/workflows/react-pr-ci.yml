@@ -20,13 +20,19 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci && npm i --save-dev @types/mocha && npm i --save-dev @types/jest
+        run: npm ci
 
       - name: Lint
         run: npm run lint --if-present
 
       - name: Run tests
         run: npm test --if-present
+
+      - name: Run vitest
+        run: npm i --save-dev @types/mocha 
+
+      - name: Run vitest tes
+        run: npm i --save-dev @types/jest
 
       - name: Run vitest testing
         run: npm install -D vitest @vitest/ui jsdom
