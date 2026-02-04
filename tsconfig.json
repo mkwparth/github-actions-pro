@@ -1,10 +1,30 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
-  "compilerOptions": {
-    "types": ["vitest/globals"]
-  }
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "jsx": "preserve",
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        "module": "esnext",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "preserveConstEnums": true,
+        "removeComments": false,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true,
+        "types": ["vitest/globals"],
+    },    
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts",
+        "**/*.spec.tsx",
+        "**/*.test.ts",
+        "**/*.test.tsx",
+    ]
 }
