@@ -1,0 +1,1 @@
+{"root":["./babel.config.cjs","./eslint.config.js","./jest.config.cjs","./vite.config.ts","./src/app.tsx","./src/main.tsx","./src/setuptests.js"],"errors":true,"version":"5.9.3"}

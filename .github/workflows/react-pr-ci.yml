@@ -28,5 +28,14 @@ jobs:
       - name: Run tests
         run: npm test --if-present
 
+      - name: Run vitest
+        run: npm i --save-dev @types/mocha 
+
+      - name: Run vitest tes
+        run: npm i --save-dev @types/jest
+
+      - name: Run vitest testing
+        run: npm install -D vitest @vitest/ui jsdom
+
       - name: Build project
         run: npm run build
